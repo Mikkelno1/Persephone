@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2e8734a999a204688cb7a6f6819c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
+  speed: 2
 --- !u!1 &5402847313120697638
 GameObject:
   m_ObjectHideFlags: 0

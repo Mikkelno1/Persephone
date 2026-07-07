@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 3330031889546952427}
   - component: {fileID: 8754736949635653384}
   - component: {fileID: 1916947064892486892}
-  - component: {fileID: 8755311724837421743}
   - component: {fileID: 6456674299524600342}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: FoodSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,20 +113,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8755311724837421743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8192398754841081316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43bcce705cbc33f4e9d904ac5c4ab8ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandomSpawner
-  _creature: {fileID: 3843492221278836237, guid: b129fe665e3ca7d4a8711c1ec1d2dfc4, type: 3}
-  _maxSpawn: 2
 --- !u!114 &6456674299524600342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a565a4fc13eab90429d6d33f738be52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  _food: {fileID: 8476828237768496633, guid: d8b39e1612b32b94d84dfe14087815b2, type: 3}
-  _maxSpawn: 20
-  _ground: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb, type: 3}
+  food: {fileID: 7109066204020878000, guid: 8681b99f10c16c04dbfe3047d0457b63, type: 3}
+  maxSpawn: 20
+  ground: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb, type: 3}
+  _creatureSpawner: {fileID: 0}

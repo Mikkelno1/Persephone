@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FoodRayCast : MonoBehaviour
+public class FoodVision : MonoBehaviour
 {
     [SerializeField] private GameObject _food;
     private LayerMask mask;

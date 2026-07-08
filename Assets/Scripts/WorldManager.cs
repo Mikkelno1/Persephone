@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
+    /**
+     * used to initialize world
+     */
     public class WorldManager : MonoBehaviour
     {
         [SerializeField] private FoodSpawner _foodSpawner;
@@ -9,6 +13,16 @@ namespace DefaultNamespace
         
         
         void Start()
+        {
+            //_foodSpawner.SpawnFood();
+            //_creatureSpawner.SpawnCreature();
+        }
+
+        private void Update()
+        {
+        }
+
+        private void LateUpdate()
         {
             _foodSpawner.SpawnFood();
             _creatureSpawner.SpawnCreature();

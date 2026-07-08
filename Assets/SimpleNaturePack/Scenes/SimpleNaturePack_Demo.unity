@@ -404,6 +404,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34d3f526198dae440bb2ce6005d86055, type: 3}
+--- !u!114 &107615665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5911188385713964259, guid: 2af180dd73b83ad4393292c052d15049, type: 3}
+  m_PrefabInstance: {fileID: 5595578616590320993}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bcce705cbc33f4e9d904ac5c4ab8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreatureSpawner
 --- !u!1001 &131089497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2707,7 +2718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.WorldManager
   _foodSpawner: {fileID: 639102677}
-  _creatureSpawner: {fileID: 1472897832}
+  _creatureSpawner: {fileID: 107615665}
 --- !u!1001 &580530024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5388,9 +5399,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1686021177304871604, guid: ebee340de387f334f9ac44e044abd8fb, type: 3}
     - target: {fileID: 6456674299524600342, guid: 2bf07b4ae321bda49944e3ce31871461, type: 3}
+      propertyPath: maxSpawn
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456674299524600342, guid: 2bf07b4ae321bda49944e3ce31871461, type: 3}
       propertyPath: _creatureSpawner
       value: 
-      objectReference: {fileID: 1472897832}
+      objectReference: {fileID: 107615665}
     - target: {fileID: 8192398754841081316, guid: 2bf07b4ae321bda49944e3ce31871461, type: 3}
       propertyPath: m_Name
       value: FoodSpawner
@@ -5970,17 +5985,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
---- !u!114 &1472897832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5911188385713964259, guid: 2af180dd73b83ad4393292c052d15049, type: 3}
-  m_PrefabInstance: {fileID: 5595578616590320993}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43bcce705cbc33f4e9d904ac5c4ab8ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CreatureSpawner
 --- !u!1001 &1491178984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8920,6 +8924,10 @@ PrefabInstance:
       propertyPath: creature
       value: 
       objectReference: {fileID: 8553847652218517206, guid: f589d3f91ededcf44be9d6c0515fc781, type: 3}
+    - target: {fileID: 5911188385713964259, guid: 2af180dd73b83ad4393292c052d15049, type: 3}
+      propertyPath: maxSpawn
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6566053545333701795, guid: 2af180dd73b83ad4393292c052d15049, type: 3}
       propertyPath: m_Name
       value: CreatureSpawner

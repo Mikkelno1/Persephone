@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5745982552978001097}
   - component: {fileID: 5086722143766263506}
   - component: {fileID: 1425896424236103063}
+  - component: {fileID: 7932569621397974963}
   m_Layer: 0
   m_Name: Creature
   m_TagString: Untagged
@@ -70,6 +71,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
   speed: 5
+  directionChangeSpeed: 5
+--- !u!54 &7932569621397974963
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507909793344039580}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6677452483271109761
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 6677452483271109761}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37540054, y: 0.5142, z: 0.33480072}
+  m_LocalPosition: {x: -0.301, y: 0.5142, z: 0.403}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -279,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 8622790894641150768}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08239937, y: 0.5142, z: 0.4951992}
+  m_LocalPosition: {x: 0.308, y: 0.5142, z: 0.393}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []

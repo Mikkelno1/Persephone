@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 152483704766531153}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.165, y: 0.492, z: 0.477}
+  m_LocalPosition: {x: -0.33499998, y: 0.492, z: 0.377}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 1264109876681588516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.509, y: 0.492, z: 0}
+  m_LocalPosition: {x: 0.321, y: 0.492, z: 0.39}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -344,9 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2e8734a999a204688cb7a6f6819c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
-  moveForce: 1
-  turnSpeed: 2
-  directionChangeInterval: 2
+  speed: 5
+  directionChangeSpeed: 5
 --- !u!54 &-8367036539909639745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -398,6 +397,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2e8734a999a204688cb7a6f6819c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
-  moveForce: 10
-  turnSpeed: 2
-  directionChangeInterval: 2
+  speed: 5
+  directionChangeSpeed: 5

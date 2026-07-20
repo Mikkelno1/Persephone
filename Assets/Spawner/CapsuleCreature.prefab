@@ -282,10 +282,11 @@ GameObject:
   m_Component:
   - component: {fileID: 419492151415447551}
   - component: {fileID: 1793625430480034135}
-  - component: {fileID: 591717095838062292}
   - component: {fileID: -8367036539909639745}
+  - component: {fileID: 591717095838062292}
   - component: {fileID: -4609816560200824339}
   - component: {fileID: 3548249858420638636}
+  - component: {fileID: 3923099070188945335}
   m_Layer: 0
   m_Name: CapsuleCreature
   m_TagString: Untagged
@@ -332,20 +333,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.47, z: 0}
---- !u!114 &591717095838062292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553847652218517206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb2e8734a999a204688cb7a6f6819c77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
-  speed: 5
-  directionChangeSpeed: 5
 --- !u!54 &-8367036539909639745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -373,6 +360,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &591717095838062292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553847652218517206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2e8734a999a204688cb7a6f6819c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
+  speed: 5
+  directionChangeSpeed: 5
+  FB: 0
+  LR: 0
 --- !u!114 &-4609816560200824339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,3 +402,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CreatureMovement
   speed: 5
   directionChangeSpeed: 5
+  FB: 0
+  LR: 0
+--- !u!114 &3923099070188945335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553847652218517206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 224c21f1f2cd4f3fb76cba74bfa61b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.CreatureBrain
+  inputs: 0
+  neurons: 0

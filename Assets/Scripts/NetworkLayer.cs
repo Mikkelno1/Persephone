@@ -1,6 +1,8 @@
-﻿namespace DefaultNamespace
+﻿using UnityEngine;
+
+namespace DefaultNamespace
 {
-    public class NetworkLayer
+    public class NetworkLayer 
     {
         public float[,] weightsArray;
         public float[] biasArray;
@@ -10,8 +12,12 @@
 
         public NetworkLayer(int inputs, int neurons)
         {
-            this.inputs = inputs;
             this.neurons = neurons;
+            this.inputs = inputs;
+            
+
+            weightsArray = new float[neurons, inputs];
+            biasArray = new float[neurons];
         }
         
         public void NextNode(float[] inputArray)
@@ -51,6 +57,22 @@
 
             return copyLayer;
         }
+
+        public void RandomizeWeightsAndBiases()
+        {
+            for (int i = 0; i < neurons; i++)
+            {
+                for (int j = 0; j < inputs; j++)
+                {
+                    weightsArray[i, j] = Random.Range(-1f, 1f);
+                }
+                biasArray[i] = Random.Range(-1f, 1f);
+            }
+        }
+        
+        
+
+        
         
        
     }
